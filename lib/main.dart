@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:twilio_demo/screens/home_controller.dart';
-import 'package:twilio_demo/screens/home_screen.dart';
+import 'package:twilio_demo/screens/custom_controller.dart';
+import 'package:twilio_demo/screens/custom_screen.dart';
+//import 'package:twilio_demo/screens/home_controller.dart';
+//import 'package:twilio_demo/screens/home_screen.dart';
 import 'package:get/get.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  Get.put<HomeController>(HomeController());
+  Get.put<CustomController>(CustomController());
   runApp(const MyApp());
 }
 
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: CustomScreen(),
     );
   }
 }
